@@ -1,27 +1,28 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
 
-    <!-- Achtergrond van de website -->
+    <!-- Achtergrond en opmaak van de website -->
     <style>
         body {
             background: linear-gradient(to right, #5dade2, #21618c);
         }
 
-        /* De lijst met links komt bovenaan in het midden */
+        /* De knoppen komen bovenaan in het midden */
         ul {
             text-align: center;
             list-style-type: none;
             padding: 0;
         }
 
-        /* De drie links komen naast elkaar */
+        /* De drie knoppen komen naast elkaar */
         li {
             display: inline-block;
         }
 
-        /* De links worden knoppen */
+        /* De opmaak van de knoppen */
         li a {
             display: block;
             background-color: white;
@@ -32,14 +33,30 @@
             border-radius: 8px;
         }
 
-        /* Verandert de kleur als je over een knop gaat */
+        /* De kleur verandert als je over een knop gaat */
         li a:hover {
             background-color: lightblue;
         }
 
-        /* De tekst komt in het midden */
+        /* Het witte vak met mijn tekst */
         .tekst {
             text-align: center;
+            background-color: white;
+            color: #21618c;
+            max-width: 650px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 1.6;
+        }
+
+        /* De afbeelding komt onder de tekst */
+        .afbeelding {
+            display: block;
+            width: 260px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
         }
     </style>
 
@@ -53,7 +70,7 @@
 
 <body>
 
-    <!-- De drie knoppen -->
+    <!-- De drie knoppen naar de andere pagina's -->
     <ul>
         <li>
             <a href="index.html">Home</a>
@@ -68,32 +85,33 @@
         </li>
     </ul>
 
-
-    <!-- Mijn afbeelding -->
-    <img src="images.jpeg"
-         style="position:relative; left:200px;"
-         alt="Deze website is nog niet af">
-
-
-    <!-- Informatie over mij -->
+    <!-- Het witte vak met informatie over mij -->
     <div class="tekst">
 
+        <!-- Titel van de pagina -->
         <h1>Over mij</h1>
 
+        <!-- Eerste stukje tekst over mezelf -->
         <p>
             Hallo! Ik ben Tim Cornet en ik ben 16 jaar oud.
             Ik zit in havo 4 en dit is mijn website
             voor het vak informatica.
         </p>
 
-        <p>
-            Mijn hobby's zijn met vrienden afspreken om naar buiten te gaan of om te gamen.
-            Ook vind ik het leuk om met mijn vader Pokémon kaarten te verzamelen, kopen en verkopen.
-            Ik werk bij de hoogvliet wat ik ook leuk vind om te doen.
-
+        <!-- Mijn hobby's, verdeeld over meerdere regels -->
+        <p style="max-width: 600px; margin: auto;">
+            Mijn hobby's zijn met vrienden afspreken om naar buiten te gaan
+            of om te gamen. Ook vind ik het leuk om met mijn vader Pokémonkaarten
+            te verzamelen, kopen en verkopen. Ik werk bij de Hoogvliet,
+            wat ik ook leuk vind om te doen.
         </p>
 
     </div>
+
+    <!-- De afbeelding staat onder het witte tekstvak -->
+    <img class="afbeelding"
+         src="images.jpeg"
+         alt="Afbeelding van mijn hobby">
 
 </body>
 
