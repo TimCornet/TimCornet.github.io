@@ -2,26 +2,97 @@
 <html>
 
 <head>
+
+    <!-- Achtergrond van de website -->
     <style>
         body {
             background: linear-gradient(to right, #5dade2, #21618c);
         }
+
+        /* De lijst met links komt bovenaan in het midden */
+        ul {
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* De drie links komen naast elkaar */
+        li {
+            display: inline-block;
+        }
+
+        /* De links worden knoppen */
+        li a {
+            display: block;
+            background-color: white;
+            color: #21618c;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 8px;
+        }
+
+        /* Verandert de kleur als je over een knop gaat */
+        li a:hover {
+            background-color: lightblue;
+        }
+
+        /* De tekst komt in het midden */
+        .tekst {
+            text-align: center;
+        }
     </style>
+
+    <!-- Naam van de website in het tabblad -->
     <title>Home</title>
+
+    <!-- Zorgt ervoor dat speciale tekens goed werken -->
     <meta charset="utf-8">
 
 </head>
 
-<body> 
-    
-    <br>
-    <img src="images.jpeg" style="position:relative; left:200px;" alt="Deze website is nog niet af">
+<body>
 
+    <!-- De drie knoppen -->
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binairstelsel.html">Binair stelsel</a></li>
-        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="binairstelsel.html">Binair stelsel</a>
+        </li>
+
+        <li>
+            <a href="kleurmodellen.html">Kleurmodellen</a>
+        </li>
     </ul>
+
+
+    <!-- Mijn afbeelding -->
+    <img src="images.jpeg"
+         style="position:relative; left:200px;"
+         alt="Deze website is nog niet af">
+
+
+    <!-- Informatie over mij -->
+    <div class="tekst">
+
+        <h1>Over mij</h1>
+
+        <p>
+            Hallo! Ik ben [jouw naam].
+            Ik zit in havo 4 en dit is mijn website
+            voor het vak informatica.
+        </p>
+
+        <p>
+            In mijn vrije tijd houd ik van [jouw hobby].
+            Op deze website vertel ik meer over mezelf
+            en over verschillende onderwerpen.
+        </p>
+
+    </div>
 
 </body>
 
