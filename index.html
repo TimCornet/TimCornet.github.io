@@ -1,23 +1,24 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 
 <head>
 
     <!-- Achtergrond en opmaak van de website -->
     <style>
+        /* De blauwe achtergrond */
         body {
             background: linear-gradient(to right, #5dade2, #21618c);
         }
 
-        /* De knoppen komen bovenaan in het midden */
+        /* De drie knoppen komen bovenaan in het midden */
         ul {
             text-align: center;
             list-style-type: none;
             padding: 0;
         }
 
-        /* De drie knoppen komen naast elkaar */
+        /* De knoppen komen naast elkaar */
         li {
             display: inline-block;
         }
@@ -38,24 +39,25 @@
             background-color: lightblue;
         }
 
-        /* Het witte vak met mijn tekst */
+        /* Het witte vak met informatie over mij */
         .tekst {
             text-align: center;
             background-color: white;
             color: #21618c;
-            max-width: 650px;
+            max-width: 600px;
             margin: 30px auto;
             padding: 20px;
             border-radius: 12px;
             line-height: 1.6;
         }
 
-        /* De afbeelding komt onder de tekst */
+        /* De afbeelding komt onder de tekst en is groter */
         .afbeelding {
             display: block;
-            width: 260px;
+            width: 500px;
+            max-width: 90%;
             height: auto;
-            margin: 20px auto;
+            margin: 30px auto;
             border-radius: 10px;
         }
     </style>
@@ -88,7 +90,7 @@
     <!-- Het witte vak met informatie over mij -->
     <div class="tekst">
 
-        <!-- Titel van de pagina -->
+        <!-- De titel van de pagina -->
         <h1>Over mij</h1>
 
         <!-- Eerste stukje tekst over mezelf -->
@@ -98,17 +100,18 @@
             voor het vak informatica.
         </p>
 
-        <!-- Mijn hobby's, verdeeld over meerdere regels -->
+        <!-- Tweede stukje tekst over mijn hobby's -->
         <p style="max-width: 600px; margin: auto;">
-            Mijn hobby's zijn met vrienden afspreken om naar buiten te gaan
-            of om te gamen. Ook vind ik het leuk om met mijn vader Pokémonkaarten
-            te verzamelen, kopen en verkopen. Ik werk bij de Hoogvliet,
+            Mijn hobby's zijn met vrienden afspreken om naar
+            buiten te gaan of om te gamen. Ook vind ik het leuk
+            om met mijn vader Pokémonkaarten te verzamelen,
+            kopen en verkopen. Ik werk bij de Hoogvliet,
             wat ik ook leuk vind om te doen.
         </p>
 
     </div>
 
-    <!-- De afbeelding staat onder het witte tekstvak -->
+    <!-- De grotere afbeelding onder het tekstvak -->
     <img class="afbeelding"
          src="images.jpeg"
          alt="Afbeelding van mijn hobby">
