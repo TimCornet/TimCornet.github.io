@@ -1,25 +1,216 @@
-<html>
-    <head>
-        <style>
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Binair stelsel</title>
+
+    <!-- De achtergrond en opmaak -->
+    <style>
+
+        /* De achtergrond */
         body {
-            background: linear-gradient(to right, #5dade2, #21618c)
+            background: linear-gradient(to right, #5dade2, #21618c);
+            margin: 0;
         }
+
+        /* De 5 knoppen bovenaan */
+        ul {
+            text-align: center;
+            list-style-type: none;
+            padding: 0;
+            margin: 25px 0 35px 0;
+        }
+
+        /* De knoppen komen naast elkaar */
+        li {
+            display: inline-block;
+        }
+
+        /* Hoe de knoppen eruitzien */
+        li a {
+            display: block;
+            background-color: white;
+            color: #21618c;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 5px;
+            border-radius: 8px;
+        }
+
+        /* De kleur verandert als je met je muis eroverheen gaat */
+        li a:hover {
+            background-color: lightblue;
+        }
+
+        /* De drie vakken met tekst komen naast elkaar */
+        .indeling {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1300px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* De vakken aan de linker- en rechterkant */
+        .zijvak {
+            background-color: white;
+            color: #21618c;
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Het middelste vak */
+        .tekst {
+            text-align: center;
+            background-color: white;
+            color: #21618c;
+            max-width: 600px;
+            flex: 1;
+            padding: 20px;
+            border-radius: 12px;
+            line-height: 1.6;
+        }
+
+        /* De afbeelding onder het middelste vak */
+        .afbeelding {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 25px auto 0 auto;
+            border-radius: 10px;
+        }
+
     </style>
-        <title>Binair stelsel</title>
-        <meta charset="utf-8">
+</head>
 
-    </head>
+<body>
 
-    <body>
-        Uitleg over het binaire stelsel
+    <!-- De vijf knoppen naar de andere pagina's -->
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
 
-        <br>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binairstelsel.html">Binair stelsel</a></li>
-        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+        <li>
+            <a href="binairstelsel.html">Binair stelsel</a>
+        </li>
+
+        <li>
+            <a href="kleurmodellen.html">Kleurmodellen</a>
+        </li>
+
+        <li>
+            <a href="invoer.html">Invoer/Verwerking/Uitvoer</a>
+        </li>
+
+        <li>
+            <a href="compressie.html">Compressie</a>
+        </li>
     </ul>
 
-    </body>
-    
-</html> 
+    <!-- De drie vakken met tekst -->
+    <div class="indeling">
+
+        <!-- Linkervak met extra informatie -->
+        <div class="zijvak">
+            <h2>Bits en bytes</h2>
+
+            <p>
+                Het woord bit is een samenvoeging van de Engelse
+                woorden "binary" en "digit".
+            </p>
+
+            <p>
+                Een bit is de kleinste eenheid van digitale
+                informatie. Een byte bestaat uit 8 bits.
+            </p>
+        </div>
+
+        <!-- Middelste vak met informatie over het binaire stelsel -->
+        <div class="tekst">
+
+            <h1>Het binaire stelsel</h1>
+
+            <p>
+                Binaire code wordt gebruikt om instructies te geven
+                aan computers met behulp van maar twee symbolen.
+                Die symbolen zijn 1 en 0.
+            </p>
+
+            <p>
+                Eigenlijk staat 0 voor uit en 1 voor aan.
+                Dit kun je vergelijken met elektrische signalen
+                in een computer.
+            </p>
+
+            <p>
+                Binair betekent tweecijferig. Het wordt zo genoemd
+                omdat je in het binaire stelsel alle getallen kunt
+                opschrijven met maar twee cijfers: 0 en 1.
+            </p>
+
+            <h2>ASCII</h2>
+
+            <p>
+                ASCII wordt gebruikt om letters, cijfers,
+                leestekens en besturingstekens voor een computer
+                weer te geven.
+            </p>
+
+            <p>
+                ASCII staat voor American Standard Code for
+                Information Interchange. Dat betekent:
+                Amerikaanse standaardcode voor informatie-uitwisseling.
+            </p>
+
+            <p>
+                Het is een standaardcode voor tekens die door
+                computers gebruikt kan worden. Elk ASCII-teken
+                heeft een eigen nummer.
+            </p>
+
+            <p>
+                Hieronder kun je klikken om meer informatie
+                over ASCII te vinden:
+            </p>
+
+            <!-- Link naar meer informatie over ASCII -->
+            <p>
+                <a href="https://www.ascii-code.com/"
+                   target="_blank">
+                    Klik hier voor informatie over ASCII
+                </a>
+            </p>
+
+        </div>
+
+        <!-- Rechtervak met een voorbeeld -->
+        <div class="zijvak">
+            <h2>Voorbeeld</h2>
+
+            <p>
+                In het binaire stelsel schrijf je getallen
+                met alleen nullen en enen.
+            </p>
+
+            <p>
+                Het getal 5 schrijf je bijvoorbeeld als
+                101 in het binaire stelsel.
+            </p>
+
+            <p>
+                Computers gebruiken deze combinatie van nullen
+                en enen om digitale informatie te verwerken.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
