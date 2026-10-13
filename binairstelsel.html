@@ -13,7 +13,7 @@
             color: #21618c;
         }
 
-        /* Navigatiebalk in het midden */
+        /* Navigatiebalk bovenaan */
         ul {
             list-style-type: none;
             text-align: center;
@@ -37,7 +37,7 @@
             border-radius: 10px;
         }
 
-        /* Kleur wanneer je over een knop gaat */
+        /* Kleur als je over een knop gaat */
         li a:hover {
             background-color: lightblue;
         }
@@ -48,27 +48,27 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: center;
-            gap: 20px;
-            max-width: 1300px;
+            gap: 18px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 0 15px;
         }
 
-        /* Het linker- en rechtervak */
+        /* Linker- en rechtervak */
         .zijvak {
             background-color: white;
-            width: 220px;
+            width: 194px;
             flex-shrink: 0;
-            padding: 20px;
+            padding: 19px;
             border-radius: 10px;
             text-align: center;
             line-height: 1.6;
         }
 
-        /* Het middelste vak met de tekst */
+        /* Middelste vak */
         .tekst {
             background-color: white;
-            max-width: 600px;
+            max-width: 430px;
             flex: 1;
             padding: 25px;
             border-radius: 10px;
@@ -76,30 +76,17 @@
             line-height: 1.6;
         }
 
-        /* De afbeelding klein maken */
+        /* Afbeelding onder het voorbeeld */
         .afbeelding {
+            display: block;
             width: 180px;
+            max-width: 100%;
             height: auto;
+            margin: 20px auto 0;
             border-radius: 10px;
-            margin-top: 20px;
         }
 
-        /* Afbeelding en tekst naast elkaar zetten */
-        .afbeelding-rij {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        /* Het vak met alleen de afbeelding */
-        .afbeelding-vak {
-            width: 200px;
-            flex-shrink: 0;
-            text-align: center;
-        }
-
-        /* Op kleinere schermen de vakken onder elkaar zetten */
+        /* Vakken aanpassen voor kleinere schermen */
         @media (max-width: 900px) {
             .indeling {
                 flex-wrap: wrap;
@@ -109,12 +96,8 @@
                 order: 1;
             }
 
-            .afbeelding-vak {
-                order: 2;
-            }
-
             .zijvak {
-                order: 3;
+                order: 2;
             }
         }
     </style>
@@ -130,11 +113,12 @@
         <li><a href="invoer.html">Invoer/Verwerking/Uitvoer</a></li>
     </ul>
 
-    <!-- De drie vakken van de pagina -->
+    <!-- Indeling met drie vakken -->
     <div class="indeling">
 
         <!-- Linkervak -->
         <div class="zijvak">
+
             <h2>Bits en bytes</h2>
 
             <p>
@@ -146,10 +130,12 @@
                 Het woord bit komt van binary digit.
                 Een byte bestaat uit 8 bits.
             </p>
+
         </div>
 
         <!-- Middelste vak -->
         <div class="tekst">
+
             <h1>Het binaire stelsel</h1>
 
             <p>
@@ -191,17 +177,12 @@
             <a href="https://www.ascii-code.com/" target="_blank">
                 Klik hier voor informatie over ASCII
             </a>
-        </div>
 
-        <!-- Afbeelding links van het middelste vak -->
-        <div class="afbeelding-vak">
-            <img class="afbeelding"
-                 src="Hexadecimale.jpeg"
-                 alt="De hexadecimale symbolen">
         </div>
 
         <!-- Rechtervak -->
         <div class="zijvak">
+
             <h2>Voorbeeld</h2>
 
             <p>
@@ -213,6 +194,12 @@
                 Computers gebruiken deze combinatie van nullen
                 en enen om digitale informatie te verwerken.
             </p>
+
+            <!-- Afbeelding rechtsonder -->
+            <img class="afbeelding"
+                 src="Hexadecimale.jpeg"
+                 alt="De hexadecimale symbolen">
+
         </div>
 
     </div>
