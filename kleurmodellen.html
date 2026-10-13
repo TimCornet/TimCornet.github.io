@@ -2,10 +2,11 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kleurmodellen</title>
 
     <style>
-        /* Achtergrond van de website */
+        /* Algemene opmaak van de pagina */
         body {
             background: linear-gradient(to right, #5dade2, #21618c);
             margin: 0;
@@ -13,21 +14,20 @@
             color: #21618c;
         }
 
-        /* Navigatiebalk bovenaan */
+        /* Navigatie bovenaan de pagina */
         ul {
             list-style-type: none;
-            text-align: center;
             padding: 20px;
             margin: 0;
+            text-align: center;
         }
 
-        /* Knoppen naast elkaar */
         li {
             display: inline-block;
             margin: 5px;
         }
 
-        /* Uiterlijk van de navigatieknoppen */
+        /* Knoppen van het menu */
         li a {
             display: inline-block;
             background-color: white;
@@ -37,15 +37,13 @@
             border-radius: 10px;
         }
 
-        /* Kleur als je over een knop gaat */
         li a:hover {
             background-color: lightblue;
         }
 
-        /* De drie vakken naast elkaar */
+        /* Indeling van de drie vakken */
         .indeling {
             display: flex;
-            flex-direction: row;
             align-items: flex-start;
             justify-content: center;
             gap: 18px;
@@ -76,7 +74,7 @@
             line-height: 1.6;
         }
 
-        /* Afbeelding in het linkervak */
+        /* Afbeeldingen in de linker- en rechtervakken */
         .afbeelding {
             display: block;
             width: 180px;
@@ -90,7 +88,7 @@
 
 <body>
 
-    <!-- Navigatieknoppen -->
+    <!-- Navigatiemenu -->
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="binairstelsel.html">Binair stelsel</a></li>
@@ -98,98 +96,83 @@
         <li><a href="invoer.html">Invoer/Verwerking/Uitvoer</a></li>
     </ul>
 
-    <!-- De drie vakken naast elkaar -->
+    <!-- De drie vakken op de pagina -->
     <div class="indeling">
 
-        <!-- Linkervak -->
+        <!-- Linkervak: RGB -->
         <div class="zijvak">
             <h2>RGB</h2>
 
             <p>
                 RGB staat voor Rood, Groen en Blauw.
-                Dit kleurmodel wordt gebruikt bij beeldschermen
-                van computers.
-            </p>
-
-            <p>
-                Het werkt met licht op een zwarte achtergrond.
-                Als alle kleuren uitstaan, zie je zwart.
-                Als alle kleuren aan staan, zie je wit.
+                Dit kleurmodel wordt gebruikt voor schermen,
+                zoals computers, telefoons en televisies.
             </p>
 
             <!-- Afbeelding van de kleurmodellen -->
             <img class="afbeelding"
                  src="Kleurmodellen.png"
-                 alt="Afbeelding van kleurmodellen">
+                 alt="Afbeelding van het RGB-kleurmodel">
         </div>
 
-        <!-- Middelste vak -->
+        <!-- Middelste vak: uitleg -->
         <div class="tekst">
-
             <h1>Kleurmodellen</h1>
 
             <h2>RGB</h2>
 
             <p>
-                RGB staat voor Rood, Groen en Blauw en wordt
-                gebruikt bij beeldschermen van computers.
-                Het werkt met licht en een zwarte achtergrond.
+                RGB staat voor Rood, Groen en Blauw.
+                Dit kleurmodel wordt gebruikt bij beeldschermen.
+                Een scherm maakt kleuren door rood, groen en blauw
+                licht met verschillende sterktes te mengen.
             </p>
 
             <p>
-                Beeldschermen bestaan uit pixels. In deze pixels
-                zitten kleine lampjes die de drie kleuren in
-                verschillende sterktes mengen om allerlei kleuren
-                te maken.
-            </p>
-
-            <p>
-                Als alle kleuren uitstaan, zie je zwart.
-                Als ze allemaal aan staan, zie je wit.
-                Dat komt doordat de kleuren licht mengen.
+                Als alle kleuren uit staan, zie je zwart.
+                Als alle kleuren op hun hoogste sterkte staan,
+                zie je wit.
             </p>
 
             <h2>CMYK</h2>
 
             <p>
-                CMYK staat voor Cyaan, Magenta, Yellow en Key
-                (zwart) en wordt gebruikt bij printers.
-                Het werkt met inkt op een witte achtergrond,
-                bijvoorbeeld papier.
-            </p>
-
-            <p>
-                De kleuren worden gemengd door licht weg te nemen
-                van het papier. Omdat Cyaan, Magenta en Geel samen
-                geen perfect zwart geven, is er extra zwarte inkt
-                (K) toegevoegd.
-            </p>
-
-            <h2>Waarom twee modellen?</h2>
-
-            <p>
-                Omdat licht en inkt kleuren anders mengen.
-                Zo zien kleuren op een scherm er anders uit
-                dan wanneer ze worden geprint.
-            </p>
-
-        </div>
-
-        <!-- Rechtervak -->
-        <div class="zijvak">
-
-            <h2>CMYK</h2>
-
-            <p>
-                CMYK wordt gebruikt bij printers.
+                CMYK staat voor Cyaan, Magenta, Yellow en Key (zwart).
+                Dit kleurmodel wordt vooral gebruikt bij printers.
                 De kleuren worden gemaakt met inkt op wit papier.
             </p>
 
             <p>
-                De K staat voor zwart. Deze kleur zorgt ervoor
+                De inkt absorbeert een deel van het licht.
+                Cyaan, magenta en geel kunnen samen niet perfect zwart
+                maken. Daarom wordt er ook zwarte inkt toegevoegd.
+            </p>
+
+            <h2>Waarom zijn er twee kleurmodellen?</h2>
+
+            <p>
+                RGB werkt met licht en CMYK werkt met inkt.
+                Omdat licht en inkt kleuren op een andere manier mengen,
+                kunnen kleuren op een scherm er anders uitzien dan
+                wanneer ze worden afgedrukt.
+            </p>
+        </div>
+
+        <!-- Rechtervak: CMYK -->
+        <div class="zijvak">
+            <h2>CMYK</h2>
+
+            <p>
+                CMYK wordt gebruikt bij printers.
+                Het werkt met gekleurde inkt op wit papier.
+                De K staat voor zwart. Zwarte inkt zorgt ervoor
                 dat donkere delen duidelijker worden afgedrukt.
             </p>
 
+            <!-- Afbeelding van het CMYK-kleurmodel -->
+            <img class="afbeelding"
+                 src="Kleurmodellen2.png"
+                 alt="Afbeelding van het CMYK-kleurmodel">
         </div>
 
     </div>
