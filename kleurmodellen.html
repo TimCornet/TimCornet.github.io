@@ -73,7 +73,7 @@
             line-height: 1.6;
         }
 
-        /* Afbeeldingen in de linker- en rechtervakken */
+        /* Afbeeldingen in de zijvakken */
         .afbeelding {
             display: block;
             width: 180px;
@@ -81,6 +81,17 @@
             height: auto;
             margin: 20px auto 0;
             border-radius: 10px;
+        }
+
+        /* Opmaak van de YouTube-link */
+        .videolink {
+            color: #21618c;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .videolink:hover {
+            color: #5dade2;
         }
     </style>
 </head>
@@ -131,6 +142,22 @@
                 Als alle kleuren uit staan, zie je zwart.
                 Als alle kleuren op hun hoogste sterkte staan,
                 zie je wit.
+            </p>
+
+            <h2>Extra uitleg en weetjes</h2>
+
+            <p>
+                Wil je meer weten over afbeeldingen, pixels en RGB?
+                Bekijk dan dit YouTube-filmpje:
+            </p>
+
+            <!-- Klikbare link naar het YouTube-filmpje -->
+            <p>
+                <a class="videolink"
+                   href="https://youtu.be/15aqFQQVBWU?si=yrmjNNBVtvuTKQVS"
+                   target="_blank">
+                    Bekijk het filmpje over pixels en RGB
+                </a>
             </p>
 
             <h2>CMYK</h2>
