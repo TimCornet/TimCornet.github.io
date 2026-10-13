@@ -42,7 +42,7 @@
             background-color: lightblue;
         }
 
-        /* De drie witte vakken naast elkaar */
+        /* De drie vakken naast elkaar */
         .indeling {
             display: flex;
             flex-direction: row;
@@ -76,16 +76,11 @@
             line-height: 1.6;
         }
 
-        /* Rechterkant met het voorbeeld en de afbeelding */
-        .rechterkant {
-            width: 232px;
-            flex-shrink: 0;
-        }
-
-        /* Afbeelding onder het rechtervak */
+        /* Afbeelding in het rechter witte vak */
         .afbeelding {
             display: block;
             width: 180px;
+            max-width: 100%;
             height: auto;
             margin: 20px auto 0;
             border-radius: 10px;
@@ -103,7 +98,7 @@
         <li><a href="invoer.html">Invoer/Verwerking/Uitvoer</a></li>
     </ul>
 
-    <!-- De drie hoofdvakken -->
+    <!-- De drie vakken naast elkaar -->
     <div class="indeling">
 
         <!-- Linkervak -->
@@ -166,29 +161,24 @@
             </a>
         </div>
 
-        <!-- Rechterkant -->
-        <div class="rechterkant">
+        <!-- Rechtervak -->
+        <div class="zijvak">
+            <h2>Voorbeeld</h2>
 
-            <!-- Wit vak met het voorbeeld -->
-            <div class="zijvak">
-                <h2>Voorbeeld</h2>
+            <p>
+                Het getal 5 in het decimale stelsel is
+                101 in het binaire stelsel.
+            </p>
 
-                <p>
-                    Het getal 5 in het decimale stelsel is
-                    101 in het binaire stelsel.
-                </p>
+            <p>
+                Computers gebruiken deze combinatie van nullen
+                en enen om digitale informatie te verwerken.
+            </p>
 
-                <p>
-                    Computers gebruiken deze combinatie van nullen
-                    en enen om digitale informatie te verwerken.
-                </p>
-            </div>
-
-            <!-- Afbeelding buiten het witte vak -->
+            <!-- Afbeelding in het witte vak -->
             <img class="afbeelding"
                  src="Hexadecimale.jpeg"
                  alt="De hexadecimale symbolen">
-
         </div>
 
     </div>
