@@ -5,7 +5,7 @@
     <title>Invoer, Verwerking en Uitvoer</title>
 
     <style>
-        /* Achtergrond en algemene tekst */
+        /* Algemene opmaak van de pagina */
         body {
             background: linear-gradient(to right, #5dade2, #21618c);
             margin: 0;
@@ -13,41 +13,38 @@
             color: #21618c;
         }
 
-        /* Navigatiebalk */
-        nav {
-            text-align: center;
+        /* Navigatiemenu bovenaan */
+        ul {
+            list-style-type: none;
             padding: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
             margin: 0;
+            text-align: center;
         }
 
-        nav li {
+        li {
             display: inline-block;
             margin: 5px;
         }
 
-        nav a {
+        /* Knoppen van het menu */
+        li a {
             display: inline-block;
             background-color: white;
             color: #21618c;
+            padding: 12px 20px;
             text-decoration: none;
-            padding: 12px 18px;
-            border-radius: 8px;
+            border-radius: 10px;
         }
 
-        nav a:hover {
+        li a:hover {
             background-color: lightblue;
         }
 
-        /* Drie vakken naast elkaar */
+        /* Indeling van de drie vakken */
         .indeling {
             display: flex;
-            justify-content: center;
             align-items: flex-start;
+            justify-content: center;
             gap: 18px;
             max-width: 1200px;
             margin: 20px auto;
@@ -75,47 +72,48 @@
             text-align: center;
             line-height: 1.6;
         }
-
-        /* Kopjes */
-        h1, h2, h3 {
-            color: #21618c;
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- Navigatiebalk -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binairstelsel.html">Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="invoer.html">Invoer/Verwerking/Uitvoer</a></li>
-        </ul>
-    </nav>
+    <!-- Navigatiemenu -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="binairstelsel.html">Binair stelsel</a></li>
+        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+        <li><a href="invoer.html">Invoer/Verwerking/Uitvoer</a></li>
+    </ul>
 
+    <!-- De drie vakken op de pagina -->
     <div class="indeling">
 
-        <!-- Linkervak: invoer -->
+        <!-- Linkervak: invoerapparaten -->
         <div class="zijvak">
             <h2>Invoer</h2>
 
             <p>
-                Invoerapparaten sturen informatie van buiten de computer
-                naar de computer.
+                Invoerapparaten verplaatsen informatie van buiten
+                de computer naar de computer.
             </p>
 
-            <h3>Voorbeelden</h3>
+            <h3>Toetsenbord</h3>
 
-            <p><strong>Toetsenbord</strong></p>
-            <p>Je typt letters die op de computer verschijnen.</p>
+            <p>
+                Je typt letters en woorden die op de computer verschijnen.
+            </p>
 
-            <p><strong>Muis</strong></p>
-            <p>Je beweegt en klikt op het scherm om iets te doen.</p>
+            <h3>Muis</h3>
 
-            <p><strong>Microfoon</strong></p>
-            <p>Je spreekt en de computer neemt het geluid op.</p>
+            <p>
+                Je beweegt en klikt op het scherm om iets te doen.
+            </p>
+
+            <h3>Microfoon</h3>
+
+            <p>
+                Je spreekt en de computer neemt het geluid op.
+            </p>
         </div>
 
         <!-- Middelste vak: uitleg -->
@@ -123,77 +121,88 @@
             <h1>Invoer, Verwerking en Uitvoer</h1>
 
             <p>
-                Er zijn twee belangrijke soorten apparaten die met de computer
-                samenwerken: invoerapparaten en uitvoerapparaten.
+                Er zijn twee belangrijke soorten apparaten die met
+                de computer samenwerken: invoerapparaten en
+                uitvoerapparaten.
             </p>
 
             <h2>Wat is invoer?</h2>
 
             <p>
-                Met invoerapparaten wordt informatie van buiten de computer
-                naar binnen de computer verplaatst.
+                Met invoerapparaten wordt informatie van buiten
+                de computer naar binnen de computer verplaatst.
             </p>
 
             <p>
-                Voorbeelden zijn je toetsenbord, muis en microfoon.
-                Je gebruikt deze apparaten om gegevens aan de computer
-                door te geven.
+                Je toetsenbord, muis en microfoon zijn voorbeelden
+                van invoerapparaten. Je gebruikt ze om gegevens
+                aan de computer door te geven.
             </p>
 
             <h2>Wat is verwerking?</h2>
 
             <p>
-                Nadat je gegevens hebt ingevoerd, verwerkt de computer deze.
-                De computer voert opdrachten uit en berekent wat er met
-                de gegevens moet gebeuren.
+                Nadat je gegevens hebt ingevoerd, verwerkt de
+                computer deze gegevens. De computer voert opdrachten
+                uit en bepaalt wat er met de gegevens moet gebeuren.
             </p>
 
             <h2>Wat is uitvoer?</h2>
 
             <p>
-                Met uitvoerapparaten wordt informatie vanuit de computer
-                naar buiten de computer verplaatst.
+                Met uitvoerapparaten wordt informatie vanuit de
+                computer naar buiten de computer verplaatst.
             </p>
 
             <p>
-                Voorbeelden zijn je computerscherm, printer en luidsprekers.
-                Deze apparaten laten het resultaat zien, drukken het af
-                of laten het horen.
+                Voorbeelden zijn je computerscherm, printer en
+                luidsprekers. Deze apparaten laten het resultaat
+                zien, drukken het af of laten het horen.
             </p>
 
             <h2>Hoe werkt het samen?</h2>
 
             <p>
-                Eerst voer je gegevens in, bijvoorbeeld met een toetsenbord.
+                Eerst voer je gegevens in met een invoerapparaat.
                 Daarna verwerkt de computer de gegevens.
-                Ten slotte zie of hoor je het resultaat via een uitvoerapparaat.
+                Ten slotte tonen uitvoerapparaten het resultaat.
             </p>
 
             <p>
-                Kortom: invoerapparaten voeren gegevens in, de computer
-                verwerkt deze gegevens en uitvoerapparaten tonen het resultaat.
+                Kortom: invoerapparaten voeren gegevens in,
+                de computer verwerkt die gegevens en
+                uitvoerapparaten tonen de informatie.
             </p>
         </div>
 
-        <!-- Rechtervak: uitvoer -->
+        <!-- Rechtervak: uitvoerapparaten -->
         <div class="zijvak">
             <h2>Uitvoer</h2>
 
             <p>
-                Uitvoerapparaten sturen informatie vanuit de computer
-                naar buiten de computer.
+                Uitvoerapparaten verplaatsen informatie vanuit
+                de computer naar buiten de computer.
             </p>
 
-            <h3>Voorbeelden</h3>
+            <h3>Computerscherm</h3>
 
-            <p><strong>Computerscherm</strong></p>
-            <p>Het scherm laat zien wat de computer berekent of weergeeft.</p>
+            <p>
+                Het scherm laat zien wat de computer berekent
+                of weergeeft.
+            </p>
 
-            <p><strong>Printer</strong></p>
-            <p>De printer drukt een document af op papier.</p>
+            <h3>Printer</h3>
 
-            <p><strong>Luidsprekers</strong></p>
-            <p>Luidsprekers laten je het geluid uit de computer horen.</p>
+            <p>
+                De printer drukt een document af op papier.
+            </p>
+
+            <h3>Luidsprekers</h3>
+
+            <p>
+                Luidsprekers laten je het geluid horen dat
+                uit de computer komt.
+            </p>
         </div>
 
     </div>
